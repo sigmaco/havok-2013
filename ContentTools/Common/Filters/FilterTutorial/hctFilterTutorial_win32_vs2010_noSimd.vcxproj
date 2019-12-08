@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug DLL|win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|win32">
+      <Configuration>Dev</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev DLL|win32">
+      <Configuration>Dev DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Hybrid DLL|win32">
+      <Configuration>Hybrid DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E209C54-E209-446E-09C5-6E209C546E20}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>DynamicLibrary</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>hctFilterTutorial</ProjectName>
+    
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.dll</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">.dll</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\debug\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\debug\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\debug_dll\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\debug_dll\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\debug_dll\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\dev\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\dev\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\dev_dll\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\dev_dll\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\dev_dll\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\hybrid_dll\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\hybrid_dll\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\hybrid_dll\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\release\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\release\hctFilterTutorial.dll</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_noSimd\release_dll\hctFilterTutorial\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\release_dll\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">hctFilterTutorial</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_noSimd\release_dll\hctFilterTutorial.dll</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_XT_STATICLINK;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\debug</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\debug</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\debug_dll</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\debug_dll</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_XT_STATICLINK;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\dev</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\dev</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\dev_dll</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\dev_dll</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>HK_DEBUG;_WINDOWS;WIN32;_WIN32;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\hybrid_dll</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\hybrid_dll</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_XT_STATICLINK;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\release</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\release</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;..\..\..\..;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)hctFilterTutorial.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;;HK_CONFIG_SIMD=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName>$(IntDir)/$(InputName).res</ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\release_dll</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkInternal.lib;hctCommon.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_noSimd\release_dll</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary></ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+<ModuleDefinitionFile>hctFilterTutorial.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ConvertToPhantomAction\hctConvertToPhantomActionFilter.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ConvertToPhantomAction\MyPhantomShape.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Classes\Reflections\MyPhantomShapeReflection.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ConvertToPhantomAction\MyPhantomShape.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="hctFilterTutorial.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ConvertToPhantomAction\hctConvertToPhantomActionOptions.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="hctFilterTutorialDll.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <None Include="hctFilterTutorial.def"><DeploymentContent>False</DeploymentContent></None>
+    <ClInclude Include="hctFilterTutorialClasses.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ResourceCompile Include="hctFilterTutorial.rc"><DeploymentContent>False</DeploymentContent></ResourceCompile>
+    <ClCompile Include="Classes\Reflections\hctConvertToPhantomActionOptionsReflection.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ConvertToPhantomAction\hctConvertToPhantomActionFilter_Dialog.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="hctFilterTutorial.cpp">
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">Create</PrecompiledHeader>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="resource.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ConvertToPhantomAction\hctConvertToPhantomActionFilter_Options.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ConvertToPhantomAction\hctConvertToPhantomActionFilter.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="hctFilterTutorialDll.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>
