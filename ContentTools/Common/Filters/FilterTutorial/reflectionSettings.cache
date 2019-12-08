@@ -1,0 +1,4 @@
+{'absProjectDir': 'y:\\NightlyJobs\\07-18-Thu-01\\Source\\ContentTools\\Common\\Filters\\FilterTutorial',
+ 'addIncludePath': ['Source', 'Source'],
+ 'setPchFile': ['ContentTools/Common/Filters/FilterTutorial/hctFilterTutorial.h'],
+ 'setPrefix': ['hct']}
