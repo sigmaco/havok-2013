@@ -6,6 +6,6 @@ Este repositório oferece os cabeçalhos (.h/hpp) mas não as implementações (
 
 ~~E também, esta plataforma partence aos atuais detentores do Havok. Estamos no campo do inimigo.~~
 
-[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://republicasigma.com.br/discord/join)
+[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://republicasigma.com.br/technology/discord)
 
 Havok é (c) Havok.com, Intel Corp e/ou Microsoft Corp. Todos os direitos reservados.
