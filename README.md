@@ -1,11 +1,14 @@
 # Havok Physics &amp; Animation 2013
-Havok Physics &amp; Animation atualizado de 20 de março de 2013.
-[https://resigma.ga/p/havok-physics/]
+Havok Physics &amp; Animation updated in 2013-03-20.
+For more about [Havok](https://sigmaco.org/?s=havok&bp_search=1&view=content), look at [SIGMAco.org](https://sigmaco.org), the our brazilian hub.
 
-Este repositório oferece os cabeçalhos (.h/hpp) mas não as implementações (.c/cpp), assim evitando possíveis derrubes do repósitório, uma vez que a intenção desta publicação é educativa e preservativa ao conteúdo digital de peso histórico à engenharia de gameware.
+Actually, this repository just contains [C](https://sigmaco.org/p/tag/c) headers (.h) to another takedown, however [SIGMA Technology Group](https://sigmaco.org/g/technology) indend to also publish a version including the entire source-code working.
 
-~~E também, esta plataforma partence aos atuais detentores do Havok. Estamos no campo do inimigo.~~
+~~Also, this platform belongs to current holders of Havok. We're in enemy field.~~
 
-[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://discord.gg/vUnjgYD)
+For any questions, use our support at Discord:
 
-Havok é (c) Havok.com, Intel Corp e/ou Microsoft Corp. Todos os direitos reservados.
+[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://discord.gg/vUnjgYD?SIGMA_Technology_Group)
+
+[Havok](https://sigmaco.org/?s=renderware&bp_search=1&view=content) is © [Havok.com](https://sigmaco.org/p/tag/havok). All rights reserved.
+This repository is intended merely to preserve the history and legacy of [Havok](https://sigmaco.org/?s=havok&bp_search=1&view=content). No copyright infringement targets any harm to its legal holders. For any objections, contact the [SIGMA Technology Group](https://sigmaco.org/g/technology) at [technology@sigmaco.org](mailto:technology@sigmaco.org).
