@@ -1,14 +1,15 @@
 # Havok Physics &amp; Animation 2013
-Havok Physics &amp; Animation updated in 2013-03-20.
-For more about [Havok](https://sigmaco.org/?s=havok&bp_search=1&view=content), look at [SIGMAco.org](https://sigmaco.org), the our brazilian hub.
+Uma distro, datada de 2013-03-20, do SDK de [Havok Physics](https://sigmaco.org/t/havok-physics) e [Havok Animation](https://sigmaco.org/t/havok-animation), [middlewares](https://sigmaco.org/t/middleware) de simulação de física.
+Atualmente, este repositório contém apenas cabeçalhos (.h) em [C](https://sigmaco.org/t/c).
 
-Actually, this repository just contains [C](https://sigmaco.org/p/tag/c) headers (.h) to another takedown, however [SIGMA Technology Group](https://sigmaco.org/g/technology) indend to also publish a version including the entire source-code working.
+Como o GitHub pertence aos donos do Havok, é melhor que seja assim para evitar conflito.
 
-~~Also, this platform belongs to current holders of Havok. We're in enemy field.~~
+Para quaisquer dúvidas ou dificuldades, use nosso canal de suporte no [Discord](https://sigmaco.org/t/discord):
 
-For any questions, use our support at Discord:
+[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner4)](https://sigmaco.org/discord/)
 
-[![](https://discordapp.com/api/guilds/349379672351571969/embed.png?style=banner1)](https://discord.gg/vUnjgYD?SIGMA_Technology_Group)
+A disponibilização deste repositório é uma resposta do cyber-consórcio brasileiro [SIGMA Technology Group](https://sigmaco.org/g/technology) a solicitações de organizações cibernéticas de modificação de [gamewares](https://sigmaco.org/t/gameware) baseados em Havok.
+Esta disponibilização está restrita a fins de estudo e modificação de engenharia de gameware. A Havok.com reserva para si o licenciamento comercial.
 
-[Havok](https://sigmaco.org/?s=renderware&bp_search=1&view=content) is © [Havok.com](https://sigmaco.org/p/tag/havok). All rights reserved.
-This repository is intended merely to preserve the history and legacy of [Havok](https://sigmaco.org/?s=havok&bp_search=1&view=content). No copyright infringement targets any harm to its legal holders. For any objections, contact the [SIGMA Technology Group](https://sigmaco.org/g/technology) at [technology@sigmaco.org](mailto:technology@sigmaco.org).
+[Havok](https://sigmaco.org/t/havok) é © [Havok.com](https://sigmaco.org/t/havok). Todos os direitos reservados.
+Contato administrativo: [technology@sigmaco.org](mailto:technology@sigmaco.org).
